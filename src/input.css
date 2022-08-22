@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.backg{
+    @apply p-3 text-white bg-[url('img/desktop/image-header.jpg')] bg-cover bg-center bg-no-repeat ;
+    @apply h-80  sm:h-[24rem] md:h-[28rem] lg:h-[32rem] xl:h-[42rem];
+}
+.nav{
+    @apply text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl;
+}
+.r-head{
+    @apply top-7;
+    @apply absolute z-10 w-full sm:flex sm:static sm:w-auto;
+    @apply flex-col justify-center py-3 sm:py-0 mt-2 sm:mt-0 sm:flex-row;
+    @apply bg-white text-black sm:text-white sm:bg-transparent;
+}
+
+.r-head a{
+    @apply flex justify-center m-1 sm:float-left text-sm sm:mx-3 sm:my-1 text-center p-2;
+    /* @apply bg-white text-black sm:text-white sm:bg-transparent; */
+}
+.contact{
+    @apply font-serif;
+    @apply font-bold bg-yellow-400 sm:bg-white uppercase border rounded-3xl text-xs px-6 !important;
+    /* @apply block w-6 sm:max-w-full; */
+    @apply  w-fit mx-auto  items-center sm:w-full text-black sm:hover:text-white sm:hover:bg-opacity-40 !important;
+}
+
+.content1-text{
+    @apply my-4 sm:my-8 md:my-12 lg:my-16 mx-6 text-center font-bold;
+    @apply uppercase text-3xl ml:text-4xl md:text-5xl lg:text-7xl xl:text-8xl;
+}
+
+.content1-arrow{
+    @apply scale-75 sm:scale-90 md:scale-110 lg:scale-125  m-auto;
+}
+
+.content2{
+    @apply flex flex-wrap bg-white;
+}
+.content2 > div{
+    @apply w-full xs:w-1/2 ;
+}
+.content-text{
+    @apply text-slate-800;
+    @apply h-[20rem] xs:h-[17rem] ml:h-[18rem] sm:h-[22rem] md:h-[27rem] lg:h-[32rem] xl:h-[36rem];
+    @apply flex flex-col justify-center items-center;
+    @apply text-base xs:text-xs ml:text-[14px] ml:leading-4 sm:text-base md:text-lg lg:text-xl xl:text-2xl;
+}
+
+.content-header1{
+    @apply font-serif;
+    @apply text-[22px] xs:text-xl ml:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+}
+
+.learnmore{
+    /* @apply hover:border-yellow-500; */
+    @apply px-1 font-serif;
+    /* @apply border-b-[6px] border- border-yellow-500; */
+    @apply before:invisible hover:before:visible;
+    @apply z-10 before:content-[""] before:block before:relative;
+    @apply before:-z-[1] before:-left-1 before:-right-4 before:top-[70%] before:w-[110%];
+    @apply before:h-2 md:before:h-3  before:rounded-xl;
+}
+
+/* .margin{
+    @apply my-4 xs:my-3 md:my-6 xl:my-7 2xl:my-8 !important;
+} */
+.content-header2{
+    @apply font-serif;
+    @apply mb-4 xs:mb-2 sm:mb-4 md:mb-6 lg:mb-6 xl:mb-8; 
+    @apply text-[24px] xs:text-lg ml:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+}
+
+.text-item{
+    @apply flex flex-col xs:items-start !important;
+    @apply text-center xs:text-left;
+    @apply px-5 xs:px-3 ml:px-5 sm:px-10 md:px-14 lg:px-16 xl:px-20 2xl:px-24;
+   
+}
+.margin{
+    @apply my-4 xs:my-3 md:my-5 xl:my-8 2xl:my-10;
+}
+
+.content-text2{
+    @apply text-gray-800 !important;
+    @apply flex flex-col justify-center items-center absolute; 
+    @apply text-sm xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl !important;
+    @apply px-5 xs:px-3 ml:px-5 sm:px-10 md:px-14 lg:px-20 xl:px-24 2xl:px-28;
+    @apply bottom-24 top-[15rem] xs:top-[12.5rem] ml:top-[13rem] sm:top-[16rem] md:bottom-16 md:top-[18rem]  ;
+}
+
+.img{
+    @apply object-cover object-center w-full h-full;
+    /* @apply h-[18rem] xs:h-[16rem] sm:h-[18rem] md:h-[25rem] lg:h-[30rem] xl:h-[36rem]; */
+}
+
+.content3{
+    @apply text-center p-10 py-16 text-gray-800;
+}
+
+.content3-header{
+    @apply font-bold font-serif;
+    @apply text-lg sm:text-lg md:text-lg lg:text-lg xl:text-xl;
+}
+
+.client-details{
+    @apply my-6 sm:mx-5;
+}
+
+.client-container{
+    @apply flex flex-col justify-center sm:flex-row;
+}
+
+.client-image{
+    @apply m-auto rounded-full scale-50;
+}
+
+.content3-text {
+    @apply mb-4;
+    @apply text-base xs:text-sm ml:text-sm sm:text-base md:text-lg lg:text-xl;
+}
+.client-name{
+    @apply font-serif;
+    @apply font-bold text-base sm:text-base md:text-base lg:text-lg xl:text-xl;
+}
+.position{
+    @apply text-sm sm:text-sm md:text-base;
+}
+.content4{
+    @apply flex flex-wrap;
+}
+.content4 > div{
+    /* @apply border border-gray-50; */
+    /* @apply leading-[20rem] xs:leading-[17rem] ml:leading-[18rem] sm:leading-[22rem] md:leading-[27rem] lg:leading-[32rem] xl:leading-[36rem]; */
+    /* @apply h-[20rem] xs:h-[17rem] ml:h-[18rem] s.
+    .m:h-[22rem] md:h-[27rem] lg:h-[32rem] xl:h-[36rem] ; */
+    @apply bg-slate-500 basis-1/2 sm:basis-1/4;
+    
+}
+
+.content5{
+    @apply text-center bg-teal-200 p-7;
+}
+
+/* .c5a{
+    @apply sm:before:content-["/"] sm:invisible;
+} */
+ .content5-textheader{
+    @apply font-bold;
+    @apply text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+    
+ }
+ .content5-nav{
+    @apply p-7;
+ }
+
+ .content5-nav > a{
+    @apply mx-2 text-sm sm:mx-6 sm:text-base hover:text-white; 
+ }
+
+.content5-icons{
+    @apply p-6;
+    @apply flex flex-row justify-center;
+}
+.content5-icons > a{
+    @apply mx-3 hover:text-white;
+}
+/* Heading */
+/* text-xl font-bold sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl */
+
+/* Sub Heading */
+/* text-base font-bold  sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl */
+
+/* Button/Body Text */
+/* text-sm  sm:text-base md:text-lg lg:text-2xl xl:text-4xl */

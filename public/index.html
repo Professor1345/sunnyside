@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/font awesome/css/all.css">
+    <script src="/public/index.js"></script>
+    <title>Sunnyside Agency</title>
+</head>
+<body class="h-full">
+    <div class="h-full">
+
+        <!-- Content 1 -->
+        <div class="backg w-full">    
+            <div class="flex justify-between relative sm:flex sm:justify-between nav">
+                <div class="font-bold px-0 sm:p-2">sunnyside</div>
+                <div class="block sm:hidden text-white" >
+                    <i class="fas fa-bars cursor-pointer" onclick="navButton()"></i>
+                </div>
+                <div class="hidden r-head" id="navbar-default">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Projects</a>
+                    <a href="#" class="contact">Contact</a>
+                </div>
+                
+                <script>
+                    var navBar = document.querySelector(".r-head");
+                    function navButton() {
+                        if (navBar.classList.contains("hidden")) {
+                            navBar.classList.remove("hidden");
+                        } else {
+                            navBar.classList.add("hidden");
+                        }
+                        //navBar.classList.toggle("hidden");
+                        //document.getElementById("navbar-default").style.display = "block";
+                    }
+                    
+                </script>
+                
+            </div>
+            <div class="h-[35rem] block">
+                <h1 class="content1-text font-serif">
+                    We are creatives</h1>
+                
+                <svg class="content1-arrow" width="36" height="114" xmlns="http://www.w3.org/2000/svg"><g stroke="#FFF" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3v100M3 95.484l15 15 15-15"/></g></svg>
+            </div>    
+        </div>
+
+        
+        <!-- Content 2.1 -->            
+        <div class="content2 flex flex-col-reverse xs:flex-row">
+                <!-- Flex 1 -->
+            <div class="content-text text-item">
+                <h2 class="font-bold content-header1">Transform your brand</h2>
+
+                <div class="margin">
+                We are a full-service creative agency specializing in helping brands grow fast. 
+                Engage your clients through compelling visuals that do most of the marketing for you.
+                </div>
+            
+                <a href="#" class="uppercase font-bold learnmore before:bg-yellow-400">Learn more</a>
+            </div>
+        
+            <!-- Flex 2 -->
+            <div class="content-text">
+                <img class="img" src="/public/img/desktop/image-transform.jpg" alt="" srcset="">
+            </div>
+        </div>
+            
+        <!-- Content 2.2 -->
+        <div class="content2">    
+
+            <!-- Flex 3 -->
+            <div class="content-text">
+                <img class="img" src="/public/img/desktop/image-stand-out.jpg" alt="" srcset="">
+            </div>
+
+            <!-- Flex 4 -->
+            <div class="content-text text-item">
+                <h2 class="font-bold content-header1">Stand out to the right audience</h2>
+
+                <div class="margin">
+                Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
+                we'll build and extend your brand in digital places. 
+                </div>
+              
+                <a href="#" class="uppercase font-bold learnmore before:bg-red-500">Learn more</a>
+            </div>
+
+            <!-- Flex 5 -->
+            <div class="block relative text-center content-text">
+                <img class="img"  src="/public/img/desktop/image-graphic-design.jpg" alt="" srcset="" height="100%" width="100%">
+                <div class="content-text2">
+                    <h3 class="font-bold my-2 content-header2">Graphic design</h3>
+                    <div>
+                    Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flex 6 -->
+            <div class="block relative text-center content-text">
+                <img class="img"  src="/public/img/desktop/image-photography.jpg" alt="" srcset="">
+                <div class="content-text2">    
+                    <h3 class="font-bold my-3 content-header2">Photography</h3>
+                    <div>
+                    Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Content 3 -->
+        <div class="content3">
+           
+            <h3 class="uppercase content3-header">Client testimonials</h3>
+                     
+            <!-- Flex 1 -->
+            <div class="client-container">
+                <div class="client-details">
+                    <img class="client-image" src="/public/img/image-emily.jpg" alt="Emily" srcset="">
+                    <div class="content3-text">
+                        We put our trust in Sunnyside and they delivered, 
+                        making sure our needs were met and deadlines were always hit.
+                    </div>
+                    <div>
+                        <div class="client-name">
+                            Emily R.
+                        </div>
+                        <div class="position">
+                            Marketing Director
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flex 2 -->
+                <div class="client-details">
+                    <img class="client-image" src="/public/img/image-thomas.jpg" alt="Thomas" srcset="">
+                    <div class="content3-text">
+                        Sunnyside's enthusiasm coupled with their keen interest in 
+                        our brand's success made it a satisfying and enjoyable experience.
+                    </div>
+                    <div>
+                        <div class="client-name">
+                            Thomas S.
+                        </div>
+                        <div class="position">
+                            Chief Operating Officer
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flex 3 -->
+                <div class="client-details">
+                    <img class="client-image" src="/public/img/image-jennie.jpg" alt="Jennie" srcset="">
+                    <div class="content3-text">
+                        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. 
+                        Highly recommended!
+                    </div>
+                    <div>
+                        <div class="client-name">
+                            Jennie F.
+                        </div>
+                        <div class="position">
+                            Business Owner
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content 4 -->
+        <div class="content4">
+            <div>
+                <img class="hidden sm:flex" src="/public/img/desktop/image-gallery-milkbottles.jpg" alt="" srcset="">
+                <img class="block sm:hidden" src="/public/img/mobile/image-gallery-milkbottles.jpg" alt="" srcset="">
+            </div>
+            <div>
+                <img class="hidden sm:flex" src="/public/img/desktop/image-gallery-orange.jpg" alt="" srcset="">
+                <img class="block sm:hidden" src="/public/img/mobile/image-gallery-orange.jpg" alt="" srcset="">
+            </div>
+            <div>
+                <img class="hidden sm:flex" src="/public/img/desktop/image-gallery-cone.jpg" alt="" srcset="">
+                <img class="block sm:hidden" src="/public/img/mobile/image-gallery-cone.jpg" alt="" srcset="">
+            </div>
+            <div>
+                <img class="hidden sm:flex" src="/public/img/desktop/image-gallery-sugarcubes.jpg" alt="" srcset="">
+                <img class="block sm:hidden" src="/public/img/mobile/image-gallery-sugar-cubes.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Content 5 -->
+        <div class="content5">
+            <div class="content5-textheader">sunnyside</div>
+
+            <div class="content5-nav">
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Projects</a>
+            </div>
+            
+            <div class="content5-icons">
+                <!-- <img src="/public/img/icon-facebook.svg" alt="facebook" srcset="">
+                <img src="/public/img/icon-instagram.svg" alt="instagram" srcset="">
+                <img src="/public/img/icon-twitter.svg" alt="twitter" srcset="">
+                <img src="/public/img/icon-pinterest.svg" alt="pinterest" srcset=""> -->
+
+    
+                <a href="https://facebook.com/alfulaaniy" class="fab fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/bello-hammed-752854151" class="fab fa-linkedin"></a>
+                <a href="https://github.com/Professor1345" class="fab fa-github"></a>
+                <a href="https://instagram.com/javanotscript" class="fab fa-instagram"></a>
+                <a href="https://twitter.com/javanotscript" class="fab fa-twitter"></a>                
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
