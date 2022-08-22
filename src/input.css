@@ -2,13 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap');
 
+
+/* @import "tailwindcss/components"; */
+/* @import "components/all.css"; */
+/* @import "components/font awesome/css/all.css"; */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 .backg{
-    @apply p-3 text-white bg-[url('img/desktop/image-header.jpg')] bg-cover bg-center bg-no-repeat ;
+    @apply bg-[url('img/desktop/image-header.jpg')];
+    @apply p-3 text-white  bg-cover bg-center bg-no-repeat ;
     @apply h-80  sm:h-[24rem] md:h-[28rem] lg:h-[32rem] xl:h-[42rem];
 }
 .nav{
@@ -98,7 +104,16 @@
 
 .img{
     @apply object-cover object-center w-full h-full;
+    @apply before:object-cover before:object-center before:w-full before:h-full;
     /* @apply h-[18rem] xs:h-[16rem] sm:h-[18rem] md:h-[25rem] lg:h-[30rem] xl:h-[36rem]; */
+}
+
+
+/* Wetin Tailwind use my eye see, nah him be this o */
+
+.image-transform{
+    /* @apply content-var('url(/public/img/desktop/image-transform.jpg)'); */
+    /* @apply before:object-cover before:object-center before:w-full before:h-full !important; */
 }
 
 .content3{
@@ -180,3 +195,8 @@
 
 /* Button/Body Text */
 /* text-sm  sm:text-base md:text-lg lg:text-2xl xl:text-4xl */
+/* @layer components{
+    .image-transform{
+        content: url(/public/img/desktop/image-stand-out.jpg);
+    }
+} */
