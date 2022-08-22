@@ -1746,22 +1746,16 @@ video {
 
 /* text-sm  sm:text-base md:text-lg lg:text-2xl xl:text-4xl */
 
-.before\:bg-yellow-500::before{
+.before\:bg-yellow-400::before{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
 .before\:bg-red-500::before{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.before\:bg-yellow-400::before{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 375px){
